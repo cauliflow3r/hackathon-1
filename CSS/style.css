@@ -8,9 +8,7 @@
 body {
   background-color: rgba(112, 7, 126, 0.664);
 }
-audio::-webkit-media-controls-panel {
-  background-color: #56aeff;
-}
+
 .container {
   width: 90%;
   max-width: 1300px;
@@ -30,7 +28,7 @@ header {
   width: 60%;
   display: flex;
   justify-content: space-between;
-  font-family: 'Nabla', cursive;
+  font-family: "Nabla", cursive;
   font-size: 1.5rem;
   align-items: center;
 }
@@ -48,12 +46,16 @@ audio {
   border: 3px solid rgb(12, 110, 134);
   border-radius: 50px;
 }
+audio::-webkit-media-controls-panel {
+  background-color: #56aeff;
+}
+/* теперь контроллер красивый */
 .about {
   display: flex;
   height: 90vh;
   flex-direction: column;
   align-items: center;
-  font-family: 'Nabla', cursive;
+  font-family: "Nabla", cursive;
   font-size: xx-large;
   background: url(../PICTURES/background.gif) no-repeat center center;
   background-size: cover;
@@ -62,7 +64,7 @@ audio {
   position: relative;
   z-index: -2;
 }
-
+/* затемнил БГшку чтобы текст был читабельным */
 .about_darken {
   position: absolute;
   width: 100%;
@@ -71,11 +73,11 @@ audio {
   opacity: 45%;
   z-index: -1;
 }
-
+/* а тут всё понятно */
 .burger_btn {
   display: none;
 }
-
+/* тут тоже */
 .nav_mobile_menu {
   display: flex;
   flex-direction: column;
@@ -91,7 +93,7 @@ audio {
 
   transition: right 300ms;
 }
-
+/*! а вот и адаптивка */
 @media screen and (max-width: 1024px) {
   .nav_menu {
     display: none;
@@ -131,7 +133,7 @@ audio {
 #burger_open_img {
   display: none;
 }
-
+/* todo вот этот мув был тяжелый. (отсылочка к html) */
 #mobile_nav_toggle:checked ~ .nav_mobile_menu {
   right: 10px !important;
 }
@@ -180,11 +182,11 @@ audio {
   border-radius: 50px;
 }
 .about-me {
-  font-family: 'Amatic SC', cursive;
+  font-family: "Amatic SC", cursive;
   color: white;
   width: 50%;
 }
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   .about-me {
     width: 90%;
     text-align: center;
@@ -247,10 +249,12 @@ audio {
   width: 50%;
   background-color: orange;
 }
+/* тут просто было лень менять класс */
 .js {
   width: 30%;
   background-color: orange;
 }
+/* и этот тоже */
 .php {
   width: 99%;
   background-color: orange;
@@ -275,7 +279,7 @@ audio {
   border: 5px solid orange;
 }
 .hobbies h2 {
-  font-family: 'Nabla', cursive;
+  font-family: "Nabla", cursive;
 }
 .hobbies__music :first-child {
   font-size: xx-large;
@@ -288,3 +292,14 @@ audio {
   background-color: purple;
   border: 5px solid orange;
 }
+/* @media screen and (max-width: 425px) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p {
+    color: white;
+  }
+} */
+/* !тут я не разобрался. но фонт слетает и становится черным на телефоне. надо бы пофиксить но я уже 11 часов сижу */
