@@ -13,22 +13,59 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
     <!-- start header -->
     <header>
       <nav class="navbar container">
-        <!-- hamburger start -->
-        <input type="checkbox" id="navi-toggle" class="checkbox" />
-        <label for="navi-toggle" class="button">
-          <span class="icon">&nbsp;</span>
-        </label>
-        <div class="background">&nbsp;</div>
-        <!-- finish hamburger -->
-        <a href="#about">About Me</a>
-        <a href="#contacts">Contacts</a>
-        <a href="#skills">Skills</a>
-        <a href="#hobbies">Hobbies</a>
-        <a href="./credits.html">Credits</a>
+        <!-- burger -->
+        <!-- burger -->
+        <!-- <div class="background">&nbsp;</div> -->
+
+        <div class="burger_btn">
+          <input id="mobile_nav_toggle" type="checkbox" />
+          <img id="burger_img" src="./PICTURES/burger.png" alt="burger" />
+          <img
+            id="burger_open_img"
+            src="./PICTURES/burger_open.png"
+            alt="burger_open"
+          />
+          <ul class="nav_mobile_menu">
+            <li>
+              <a href="#about">About Me</a>
+            </li>
+            <li>
+              <a href="#contacts">Contacts</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#hobbies">Hobbies</a>
+            </li>
+            <li>
+              <a href="./credits.html">Credits</a>
+            </li>
+          </ul>
+        </div>
+
+        <ul class="nav_menu">
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#contacts">Contacts</a>
+          </li>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#hobbies">Hobbies</a>
+          </li>
+          <li>
+            <a href="./credits.html">Credits</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <audio
@@ -36,8 +73,11 @@
       src="./music/cal-scruby-money-buy-drugs-interlude_456240139.mp3"
       controls
       autoplay
+      loop
     ></audio>
+
     <section id="about" class="about container">
+      <div class="about_darken"></div>
       <div class="about__picture">
         <img src="./PICTURES/profile.jpg" alt="" />
       </div>
@@ -55,43 +95,45 @@
     </section>
     <section id="contacts" class="contacts">
       <div class="socials container">
-        <a href="https://github.com/cauliflow3r">
+        <a target="_blank" href="https://github.com/cauliflow3r">
           <img src="./svg/social-github-svgrepo-com.svg" alt="github" />
         </a>
-        <a href="">
+        <a target="_blank" href="">
           <img src="./svg/social-whats-app-svgrepo-com.svg" alt="wapp" />
         </a>
-        <a href="">
+        <a target="_blank" href="">
           <img src="./svg/social-facebook-svgrepo-com.svg" alt="facebook" />
         </a>
-        <a href="https://steamcommunity.com/id/seithhendrix">
+        <a target="_blank" href="https://steamcommunity.com/id/seithhendrix">
           <img src="./svg/social-steam-svgrepo-com.svg" alt="steam" />
         </a>
-        <a href="">
+        <a target="_blank" href="">
           <img src="./svg/social-twitter-svgrepo-com.svg" alt="twitter" />
         </a>
-        <a href="">
+        <a target="_blank" href="">
           <img src="./svg/social-vkontakte-svgrepo-com.svg" alt="vk" />
         </a>
       </div>
     </section>
 
-    <section id="skills" class="skills dna">
+    <section id="skills" class="skills container dna">
       <img src="./PICTURES/bigbrain.png" alt="bigbrain" />
-      <div>
-        <div class="skills html">♥HTML♥50%</div>
-      </div>
+      <div class="skills_list">
+        <div>
+          <div class="skills html">♥HTML♥50%</div>
+        </div>
 
-      <div>
-        <div class="skills css">♥CSS♥50%</div>
-      </div>
+        <div>
+          <div class="skills css">♥CSS♥50%</div>
+        </div>
 
-      <div>
-        <div class="skills js">COOKING 30%</div>
-      </div>
+        <div>
+          <div class="skills js">COOKING 30%</div>
+        </div>
 
-      <div>
-        <div class="skills php">DOTA2 MMR: 2500</div>
+        <div>
+          <div class="skills php">DOTA2 MMR: 2500</div>
+        </div>
       </div>
     </section>
     <section id="hobbies" class="hobbies container">
