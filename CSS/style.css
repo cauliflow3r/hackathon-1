@@ -3,6 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: rgba(112, 7, 126, 0.664);
+}
+audio::-webkit-media-controls-panel {
+  background-color: #56aeff;
+}
 .container {
   width: 90%;
   display: flex;
@@ -40,6 +46,7 @@ audio {
   font-size: xx-large;
   background: url(../PICTURES/background.gif) no-repeat center center;
   background-size: cover;
+  border: 5px solid orange;
 }
 .about__picture {
   display: flex;
@@ -76,6 +83,7 @@ audio {
   background: url(../PICTURES/photo-1558481795-7f0a7c906f5e.jpg) no-repeat
     center center;
   background-size: cover;
+  border: 5px solid orange;
 }
 /* finish socials*/
 .skills {
@@ -84,23 +92,107 @@ audio {
   text-align: center;
   padding-top: 10px; /* Add top padding */
   padding-bottom: 10px; /* Add bottom padding */
-  color: orange; /* White text color */
+  color: purple; /* White text color */
   margin-bottom: 20px;
+  border: 5px solid orange;
 }
 
 .html {
   width: 50%;
-  background-color: purple;
-} /* Green */
+  background-color: orange;
+}
 .css {
   width: 50%;
-  background-color: purple;
-} /* Blue */
+  background-color: orange;
+}
 .js {
   width: 30%;
-  background-color: purple;
-} /* Red */
+  background-color: orange;
+}
 .php {
   width: 99%;
+  background-color: orange;
+}
+.dna {
+  background: url(../PICTURES/dna.avif) no-repeat center center;
+  background-size: 100% 100%;
+}
+/* finish skills */
+.hobbies img {
+  width: 400px;
+  height: 400px;
+}
+.hobbies {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  background: url(../PICTURES/hobbies-background.png);
+  background-size: 100% 100%;
+  border: 5px solid orange;
+}
+.hobbies h2 {
+  font-family: "Nabla", cursive;
+}
+.hobbies__music :first-child {
+  font-size: xx-large;
+}
+.hobbies__music :nth-child(2) {
   background-color: purple;
-} /* Dark Grey */
+  border: 5px solid orange;
+}
+.hobbies__cats > h2 {
+  background-color: purple;
+  border: 5px solid orange;
+}
+/* start hamburger */
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.icon,
+.icon::before,
+.icon::after {
+  width: 3rem;
+  height: 2px;
+  background-color: gray;
+  display: inline-block;
+}
+
+.icon::before,
+.icon::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  transition: all 0.2s;
+}
+
+.icon::before {
+  top: -0.8rem;
+}
+.icon::after {
+  top: 0.8rem;
+}
+
+.button:hover icon:before {
+  top: -1rem;
+}
+.button:hover icon::after {
+  top: 1rem;
+}
+
+.checkbox:checked + .button .icon {
+  background-color: transparent;
+}
+
+.checkbox:checked + .button .icon::before {
+  top: 0;
+  transform: rotate(135deg);
+}
+.checkbox:checked + .button .icon::after {
+  top: 0;
+  transform: rotate(-135deg);
+}
