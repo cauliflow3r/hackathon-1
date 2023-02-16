@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 90%;
+  display: flex;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 50px;
+  background-color: rgba(70, 26, 128, 0.459);
+  display: flex;
+  align-items: center;
+}
+.navbar {
+  margin: 0 auto;
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  font-family: "Nabla", cursive;
+  font-size: 1.5rem;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+}
+audio {
+  border: 3px solid rgb(12, 110, 134);
+  border-radius: 50px;
+}
+.about {
+  display: flex;
+  height: 700px;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Nabla", cursive;
+  font-size: xx-large;
+  background: url(../PICTURES/background.gif) no-repeat center center;
+  background-size: cover;
+}
+.about__picture {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+.about img {
+  width: 30%;
+  border: 3px solid rgb(12, 110, 134);
+  border-radius: 50px;
+}
+.about-me {
+  font-family: "Amatic SC", cursive;
+  color: white;
+  width: 50%;
+}
+.about-me a {
+  color: antiquewhite;
+}
+/* finish about me  */
+.socials img {
+  width: 40px;
+  border: 2px solid antiquewhite;
+  background-color: orange;
+  border-radius: 10px;
+  fill: orange;
+}
+
+.socials {
+  height: 200px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: url(../PICTURES/photo-1558481795-7f0a7c906f5e.jpg) no-repeat
+    center center;
+  background-size: cover;
+}
+/* finish socials*/
+.skills {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: orange; /* White text color */
+  margin-bottom: 20px;
+}
+
+.html {
+  width: 50%;
+  background-color: purple;
+} /* Green */
+.css {
+  width: 50%;
+  background-color: purple;
+} /* Blue */
+.js {
+  width: 30%;
+  background-color: purple;
+} /* Red */
+.php {
+  width: 99%;
+  background-color: purple;
+} /* Dark Grey */
